@@ -10,6 +10,9 @@ namespace Command_Center__Zainab_Alqattan_
     {
         static void Main(string[] args)
         {
+            CommandCenter center = new CommandCenter();
+
+            center.run();
         }
     }
 }
