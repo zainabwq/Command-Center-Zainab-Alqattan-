@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace Command_Center__Zainab_Alqattan_
 {
-    internal class Program
+    public interface ICommand
     {
-        static void Main(string[] args)
-        {
-            CommandCenter center = new CommandCenter();
-            center.Run();
-        }
+        string Name { get; }
+        void Execute(CommandCenter center);
+
     }
 }
